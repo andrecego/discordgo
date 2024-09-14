@@ -1,5 +1,5 @@
 // Discordgo - Discord bindings for Go
-// Available at https://github.com/bwmarrin/discordgo
+// Available at https://github.com/andrecego/discordgo
 
 // Copyright 2015-2016 Bruce Marriner <bruce@sqls.net>.  All rights reserved.
 // Use of this source code is governed by a BSD-style
@@ -125,6 +125,9 @@ type Session struct {
 
 	// sequence tracks the current gateway api websocket sequence number
 	sequence *int64
+
+	// stores sessions current Discord Resume Gateway
+	resumeGatewayURL string
 
 	// stores sessions current Discord Gateway
 	gateway string
